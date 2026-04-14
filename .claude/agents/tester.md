@@ -38,7 +38,7 @@ description: SDD 시나리오를 E2E·통합 테스트로 변환·실행. 보안
 ### frontend
 1. 기존 단위 테스트 전체 실행 (`STACK.테스트 명령`) → 회귀 확인
 2. 각 `SCENARIOS` → Playwright 테스트 작성 (`{PACKAGE}/e2e/`)
-3. `STACK.E2E 명령` (headless 기본) 실행. CI 아닌 로컬 디버깅 시만 `--headed`.
+3. `STACK.E2E 명령`을 **`--headed`로 실행** (로컬 개발 기본 — 실제 브라우저가 열리는 것을 유저가 직접 확인). `CI=1` 환경에서만 headless.
 
 ### fullstack
 backend 단계 → frontend 단계 순차.
